@@ -3,7 +3,7 @@
 
 let a = 3;
 let b = 14;
-if(b % a === 0) {
+if(a % b === 0 || b % a === 0) {
     console.log("1");
 } else {
     console.log("0");
@@ -12,7 +12,7 @@ if(b % a === 0) {
 
 let a = 18;
 let b = 2;
-if(a % b === 1) {
+if(a % b === 1 || b % a === 1) {
    console.log("0");
 } else{
     console.log("1");
@@ -20,7 +20,7 @@ if(a % b === 1) {
 
 let a = 7;
 let b = 21;
-if(b % a === 1) {
+if(a % b === 1 || b % a === 1) {
     console.log("0");
 } else {
     console.log("1");
@@ -74,7 +74,7 @@ c = "100" + (100 + 100) + (100 + 100 + 100);
  // ex 4
 
 let a = 367;
-if(a % 10 === 1) {
+if(a % 10 === 0) {
   console.log(a);
 } else {
   d = `${a % 10}` + `${Math.floor(a/10)}`;
@@ -83,34 +83,34 @@ if(a % 10 === 1) {
 
 
 
-let a = 1002;
-if(a % 10 === 1) {
-  console.log(a);
+let b = 1002;
+if(b % 10 === 0) {
+  console.log(b);
 } else {
-  d = `${a % 10}` + `${Math.floor(a/10)}`;
+  d = `${b % 10}` + `${Math.floor(b/10)}`;
   console.log(d);
 }
 
 
 
 
- let a = 250;
- if(a % 10 === 0) {
-   console.log(a);
+ let c = 250;
+ if(c % 10 === 0) {
+   console.log(c);
  } else {
-   d = `${a % 10}` +  `${Math.floor(a/10)}`;
+   d = `${c % 10}` +  `${Math.floor(c/10)}`;
    console.log(d);
  } 
 
 
 
- let a = 8;
- if(a < 10)
- console.log|(a);
- else if(a % 10 === 0) {
-   console.log(a);
+ let z = 8;
+ if(z < 10) {
+ console.log(z);
+ } else if(z % 10 === 0) {
+   console.log(z);
  } else {
-   d = `${a % 10}` +  `${Math.floor(a/10)}`;
+   d = `${z % 10}` +  `${Math.floor(z/10)}`;
    console.log(d);
  }  
 
@@ -128,3 +128,6 @@ alert(answer);
 let example = 7 + 52 + (-23) + 9 + (-81)
 answer = example/5;
 alert(answer);
+
+
+
